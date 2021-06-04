@@ -1,15 +1,15 @@
 <template>
-  <v-app>
+  <v-app style="background-color: #2a2b2b">
     <v-app-bar
       app
       clipped-left
-      color="#092d3d"
+      color="#0e0e14"
       dark
     >
       <v-app-bar-nav-icon @click="isNavDrawerOpen = !isNavDrawerOpen" />
-      <v-toolbar-title>Patrick T. Moore</v-toolbar-title>
+      <v-toolbar-title class="flex text-center">Patrick T. Moore</v-toolbar-title>
     </v-app-bar>
-    <NavDrawer/>
+    <NavDrawer v-model="isNavDrawerOpen"/>
   </v-app>
 </template>
 
@@ -18,13 +18,15 @@ import NavDrawer from './components/NavDrawer';
 
 export default {
   name: 'App',
-
   components: {
     NavDrawer,
   },
 
   data: () => ({
-    //
+    isNavDrawerOpen: true
   }),
+
+  methods: {
+  }
 };
 </script>
