@@ -9,7 +9,7 @@
     <v-list dense nav class="py-0">
       
       <!-- TODO: put into a list and iterate -->
-      <v-list-item>
+      <v-list-item :to="'/overview'">
         <v-list-item-icon>
           <v-icon>mdi-all-inclusive</v-icon>
         </v-list-item-icon>

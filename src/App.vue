@@ -10,6 +10,11 @@
       <v-toolbar-title class="flex text-center">Patrick T. Moore</v-toolbar-title>
     </v-app-bar>
     <NavDrawer v-model="isNavDrawerOpen"/>
+      <v-content>
+        <v-container fluid>
+          <router-view/>
+        </v-container>
+      </v-content>
   </v-app>
 </template>
 
@@ -25,8 +30,5 @@ export default {
   data: () => ({
     isNavDrawerOpen: true
   }),
-
-  methods: {
-  }
 };
 </script>
