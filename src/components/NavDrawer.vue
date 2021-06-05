@@ -18,7 +18,7 @@
         </v-list-item-content>
       </v-list-item>
 
-      <v-list-item :to="'/work-experience'">
+      <v-list-item :to="'/experience'">
         <v-list-item-icon>
           <v-icon>mdi-briefcase</v-icon>
         </v-list-item-icon>

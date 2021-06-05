@@ -5,7 +5,7 @@
     <v-row>
       <v-col align="center" justify="center">
         <transition name="fade">
-          <v-img src="@/assets/education/uca_logo.png" max-height="150" max-width="150"/>
+          <v-img v-if="seen" src="@/assets/education/uca_logo.png" max-height="150" max-width="150"/>
         </transition>    
       </v-col>
     </v-row>
