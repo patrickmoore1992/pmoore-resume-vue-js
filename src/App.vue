@@ -1,5 +1,5 @@
 <template>
-  <v-app style="background-color: #2a2b2b">
+  <v-app style="background-color: #fafafa">
     <v-app-bar
       app
       clipped-left
@@ -7,14 +7,18 @@
       dark
     >
       <v-app-bar-nav-icon @click="isNavDrawerOpen = !isNavDrawerOpen" />
-      <v-toolbar-title class="flex text-center">Patrick T. Moore</v-toolbar-title>
+      <!-- <v-toolbar-title class="flex text-center">Patrick T. Moore</v-toolbar-title> -->
     </v-app-bar>
     <NavDrawer v-model="isNavDrawerOpen"/>
-      <v-content>
-        <v-container fluid>
-          <router-view/>
-        </v-container>
-      </v-content>
+    <v-content>
+      <v-container fluid>
+        <router-view/>
+      </v-container>
+    </v-content>
+
+    <v-footer fixed app padless dark>
+      <v-spacer></v-spacer><span>Last Updated June 2021</span>&nbsp;
+    </v-footer>
   </v-app>
 </template>
 
@@ -32,3 +36,6 @@ export default {
   }),
 };
 </script>
+<style scoped>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+</style>
