@@ -1,6 +1,7 @@
 <template>
   <v-navigation-drawer 
-    dark color="#0e0e14" 
+    dark color="#0e0e14"
+    style="opacity: .9"
     app 
     clipped 
     v-bind="$attrs" 

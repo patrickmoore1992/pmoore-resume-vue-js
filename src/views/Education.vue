@@ -34,7 +34,7 @@
       <v-col align="center" justify="center">
         <transition name="fade">
           <span style="font-family: Roboto; color: grey" v-if="seen">
-            August 2010 - May 2014
+            Fall 2010 - Spring 2014
           </span>
         </transition>    
       </v-col>
@@ -110,7 +110,7 @@
                 <v-list-item-title><b>Student Activities Board</b><v-divider light/></v-list-item-title>
                 <v-list-item-subtitle style="padding-bottom: 15px; padding-top: 5px;">
                     The UCA Student Activities Board is responsible for deciding how to allocate the student activity fee obtained
-                    from students' tuition costs for various events for the student community.
+                    from students' tuition costs for various campus events.
                 </v-list-item-subtitle>
                 <v-list-item-subtitle>
                   <b>Executive Comittee - Vice President</b> - August 2013 - May 2014
@@ -224,7 +224,7 @@ export default {
 </script>
 <style scoped>
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 3.5s
+  transition: opacity 2s
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0

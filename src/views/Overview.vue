@@ -25,7 +25,7 @@
               v-if="seen" 
               style="font-family: Roboto; color: grey">
               <strong>
-                Full-stack software engineer who is looking for exciting opportunities.
+                Full-stack software engineer looking for exciting and challenging opportunities.
               </strong>
             </span>
           </transition>
@@ -38,7 +38,7 @@
             <span 
               v-if="seen" 
               style="font-family: Roboto; color: grey">
-                Experienced data engineer with a focus in development operations and scalable web tool design.  I work with big data, and big data accessories.
+                Former business major turned data engineer with a focus in operations and scalable web tool development.
             </span>
           </transition>
         </v-col>
@@ -83,7 +83,7 @@ export default {
 </script>
 <style scoped>
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 3.5s
+  transition: opacity 2s
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0

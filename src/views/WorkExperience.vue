@@ -1,11 +1,11 @@
 <template>
   <v-container fluid>
     <!-- Convert/move this to a toggle switch and add ability to disable v-tooltip while active -->
-    <v-row>
+    <!-- <v-row>
       <v-col>
         <v-btn @click="toggleLabels()">test</v-btn>
       </v-col>
-    </v-row>
+    </v-row> -->
 
     <!-- TODO: Make these a component! -->
     <!-- Programming Language Logos -->
@@ -257,7 +257,7 @@ export default {
 </script>
 <style scoped>
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 3.5s
+  transition: opacity 2s
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0

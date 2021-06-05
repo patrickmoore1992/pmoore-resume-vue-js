@@ -1,13 +1,7 @@
 <template>
   <v-app style="background-color: #fafafa">
-    <v-app-bar
-      app
-      clipped-left
-      color="#0e0e14"
-      dark
-    >
+    <v-app-bar style="opacity: .9" app clipped-left color="#0e0e14" dark>
       <v-app-bar-nav-icon @click="isNavDrawerOpen = !isNavDrawerOpen" />
-      <!-- <v-toolbar-title class="flex text-center">Patrick T. Moore</v-toolbar-title> -->
     </v-app-bar>
     <NavDrawer v-model="isNavDrawerOpen"/>
     <v-content>
