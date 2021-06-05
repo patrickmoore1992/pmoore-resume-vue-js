@@ -1,44 +1,13 @@
 <template>
   <v-container fluid>
-    <v-row>
-        <v-col>
-            <v-btn @click="toggleLabels()">test</v-btn>
-        </v-col>
-    </v-row>
-
-    <!-- Operating System Logos -->
+    <!-- Convert/move this to a toggle switch and add ability to disable v-tooltip while active -->
     <v-row>
       <v-col>
-        <transition name="fade">
-          <h3 v-if="seen" style="font-family: Roboto"><strong>Operating Systems:</strong></h3>
-        </transition>
-      </v-col>
-    </v-row>
-    <!-- TODO: Make these into components where you just pass the array of objects. -->
-    <v-row>
-      <v-col>
-        <ul style="display: grid;grid-template-columns:repeat(15,1fr);">
-          <li v-for="(item, i) in operatingSystems" :key="i" style="display: block">
-            <v-tooltip v-model="item.show" bottom>
-              <template v-slot:activator="{ on, attrs }">
-                <transition name="fade">  
-                  <v-img
-                    v-if="seen"
-                    v-bind="attrs"
-                    v-on="on"
-                    contain 
-                    v-bind:src="item.src" 
-                    height="50px" 
-                    width="50px"/>
-                </transition>
-              </template>
-              <span>{{ item.name }}</span>
-            </v-tooltip>
-          </li>
-        </ul>  
+        <v-btn @click="toggleLabels()">test</v-btn>
       </v-col>
     </v-row>
 
+    <!-- TODO: Make these a component! -->
     <!-- Programming Language Logos -->
     <v-row>
       <v-col>
@@ -52,39 +21,6 @@
       <v-col>
         <ul style="display: grid;grid-template-columns:repeat(15,1fr);">
           <li v-for="(item, i) in languages" :key="i" style="display: block">
-            <v-tooltip v-model="item.show" bottom>
-              <template v-slot:activator="{ on, attrs }">
-                <transition name="fade">  
-                  <v-img
-                    v-if="seen"
-                    v-bind="attrs"
-                    v-on="on"
-                    contain 
-                    v-bind:src="item.src" 
-                    height="50px" 
-                    width="50px"/>
-                </transition>
-              </template>
-              <span>{{ item.name }}</span>
-            </v-tooltip>
-          </li>
-        </ul>  
-      </v-col>
-    </v-row>
-
-    <!-- Cloud Service Logos -->
-    <v-row>
-      <v-col>
-        <transition name="fade">
-          <h3 v-if="seen" style="font-family: Roboto"><strong>Cloud Services:</strong></h3>
-        </transition>
-      </v-col>
-    </v-row>
-
-    <v-row>
-      <v-col>
-        <ul style="display: grid;grid-template-columns:repeat(15,1fr);">
-          <li v-for="(item, i) in cloudServices" :key="i" style="display: block">
             <v-tooltip v-model="item.show" bottom>
               <template v-slot:activator="{ on, attrs }">
                 <transition name="fade">  
@@ -138,6 +74,39 @@
       </v-col>
     </v-row>
 
+    <!-- Cloud Service Logos -->
+    <v-row>
+      <v-col>
+        <transition name="fade">
+          <h3 v-if="seen" style="font-family: Roboto"><strong>Cloud Services:</strong></h3>
+        </transition>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col>
+        <ul style="display: grid;grid-template-columns:repeat(15,1fr);">
+          <li v-for="(item, i) in cloudServices" :key="i" style="display: block">
+            <v-tooltip v-model="item.show" bottom>
+              <template v-slot:activator="{ on, attrs }">
+                <transition name="fade">  
+                  <v-img
+                    v-if="seen"
+                    v-bind="attrs"
+                    v-on="on"
+                    contain 
+                    v-bind:src="item.src" 
+                    height="50px" 
+                    width="50px"/>
+                </transition>
+              </template>
+              <span>{{ item.name }}</span>
+            </v-tooltip>
+          </li>
+        </ul>  
+      </v-col>
+    </v-row>
+
     <!-- databases -->
     <v-row>
       <v-col>
@@ -171,6 +140,38 @@
       </v-col>
     </v-row>
 
+    <!-- Operating System Logos -->
+    <v-row>
+      <v-col>
+        <transition name="fade">
+          <h3 v-if="seen" style="font-family: Roboto"><strong>Operating Systems:</strong></h3>
+        </transition>
+      </v-col>
+    </v-row>
+    <!-- TODO: Make these into components where you just pass the array of objects. -->
+    <v-row>
+      <v-col>
+        <ul style="display: grid;grid-template-columns:repeat(15,1fr);">
+          <li v-for="(item, i) in operatingSystems" :key="i" style="display: block">
+            <v-tooltip v-model="item.show" bottom>
+              <template v-slot:activator="{ on, attrs }">
+                <transition name="fade">  
+                  <v-img
+                    v-if="seen"
+                    v-bind="attrs"
+                    v-on="on"
+                    contain 
+                    v-bind:src="item.src" 
+                    height="50px" 
+                    width="50px"/>
+                </transition>
+              </template>
+              <span>{{ item.name }}</span>
+            </v-tooltip>
+          </li>
+        </ul>  
+      </v-col>
+    </v-row>
 
   </v-container>
 </template>
@@ -198,6 +199,7 @@ export default {
         { src: require('@/assets/experience/languages/go_logo.jpg'), name: 'Golang', show: false },
     ],
     cloudServices: [
+        { src: require('@/assets/experience/cloud/aws.png'), name: 'Amazon Web Services', show: false },
         { src: require('@/assets/experience/cloud/databricks.png'), name: 'Databricks', show: false },
         { src: require('@/assets/experience/cloud/emr.png'), name: 'Elastic Map Reduce (EMR)', show: false },
         { src: require('@/assets/experience/cloud/kinesis.png'), name: 'Kinesis', show: false },

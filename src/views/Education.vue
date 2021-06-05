@@ -49,6 +49,7 @@
     </v-row>
 
     <!-- RELEVANT COURSEWORK -->
+    <!-- TODO: Convert this from simple-table into like a v-list or something. -->
     <v-row>
       <v-col align="center" justify="center">
         <transition name="fade">
@@ -78,7 +79,16 @@
       </v-col>
     </v-row>
 
+    <v-row>
+      <v-col align="center" justify="center">
+        <transition name="fade">
+          <v-divider v-if="seen" light width='70%'/>
+        </transition>    
+      </v-col>
+    </v-row>
+
     <!-- STUDENT ORGANIZATIONS -->
+    <!-- TODO: Clean this shit up. -->
     <v-row>
       <v-col align="center" justify="center">
         <transition name="fade">
@@ -144,6 +154,14 @@
       </v-col>
     </v-row>
 
+    <v-row>
+      <v-col align="center" justify="center">
+        <transition name="fade">
+          <v-divider v-if="seen" light width='70%'/>
+        </transition>    
+      </v-col>
+    </v-row>
+
     <!-- Picture Gallery -->
     <v-row>
       <v-col align="center" justify="center">
@@ -157,14 +175,6 @@
               transition="fade-transition"
             />
         </v-carousel>
-        </transition>    
-      </v-col>
-    </v-row>
-
-    <v-row>
-      <v-col align="center" justify="center">
-        <transition name="fade">
-          <v-divider v-if="seen" light width='70%'/>
         </transition>    
       </v-col>
     </v-row>
