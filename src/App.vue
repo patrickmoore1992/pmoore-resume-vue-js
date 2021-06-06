@@ -1,7 +1,11 @@
 <template>
   <v-app style="background-color: #fafafa">
-    <v-app-bar style="opacity: .9" app clipped-left color="#0e0e14" dark>
-      <v-app-bar-nav-icon @click="isNavDrawerOpen = !isNavDrawerOpen" />
+    <v-app-bar style="opacity: .9; color: #0e0e14" app clipped-left dark color="#0e0e14">
+      <v-app-bar-nav-icon @click="isNavDrawerOpen = !isNavDrawerOpen"/>
+      <!-- <span 
+        style="font-family: 'Lobster', cursive; color: white">
+          "If wishes were fishes we'd all cast nets"
+      </span> -->
     </v-app-bar>
     <NavDrawer v-model="isNavDrawerOpen"/>
     <v-content>
@@ -9,9 +13,9 @@
         <router-view/>
       </v-container>
     </v-content>
-
     <v-footer fixed app padless dark>
-      <v-spacer></v-spacer><span>Last Updated June 2021</span>&nbsp;
+      <v-spacer/>
+      <span>Patrick Thomas Moore, Est. July 3rd, 1992</span>&nbsp;
     </v-footer>
   </v-app>
 </template>
@@ -32,4 +36,5 @@ export default {
 </script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 </style>

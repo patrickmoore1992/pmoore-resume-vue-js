@@ -4,7 +4,7 @@
         <v-col align="center" justify="center">
           <transition name="fade">
             <v-avatar v-if="seen" size="150">
-              <v-img src="@/assets/patrick_avatar_v3.jpg"/>
+              <v-img src="@/assets/patrick_avatar.png"/>
             </v-avatar>
           </transition>
         </v-col>

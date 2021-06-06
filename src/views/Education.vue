@@ -210,10 +210,10 @@ export default {
         { name: 'Business Information Technology (BIT) Club' },
     ],
     items: [
-        { src: require('@/assets/education/sab1.jpg') },
-        { src: require('@/assets/education/sab2.jpg') },
-        { src: require('@/assets/education/sab3.jpg') },
-        { src: require('@/assets/education/bmb1.jpg') },
+        { src: require('@/assets/education/sab1.png') },
+        { src: require('@/assets/education/sab2.png') },
+        { src: require('@/assets/education/sab3.png') },
+        { src: require('@/assets/education/bmb1.png') },
       ],
   }),
 
