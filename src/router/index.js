@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import overview from '@/views/Overview.vue'
 import education from '@/views/Education.vue'
-import experience from '@/views/WorkExperience.vue'
+import experience from '@/views/Experience.vue'
 import contact from '@/views/Contact.vue'
 
 Vue.use(VueRouter)

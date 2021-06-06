@@ -34,7 +34,7 @@
           <v-icon>mdi-briefcase</v-icon>
         </v-list-item-icon>
         <v-list-item-content>
-          <v-list-item-title>Work Experience</v-list-item-title>
+          <v-list-item-title>Experience & Skills</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 

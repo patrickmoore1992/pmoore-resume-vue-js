@@ -1,20 +1,34 @@
 <template>
   <v-container fluid>
-    <LabelSwitch @toggled="toggleLabels"/>
-    <SkillGallery :skillObjList="languages" :label="'Languages:'"/>
-    <SkillGallery :skillObjList="cloudServices" :label="'Cloud Services:'"/>
-    <SkillGallery :skillObjList="frameworks" :label="'Frameworks:'"/>
-    <SkillGallery :skillObjList="databases" :label="'Databases:'"/>
-    <SkillGallery :skillObjList="operatingSystems" :label="'Operating Systems:'"/>
+    <TabSlider @switched="tabSwitch"/>
+    <v-row>
+      <v-col>
+        <div v-if="tabIndex === 0">
+          <LabelSwitch @toggled="toggleLabels"/>
+          <SkillGallery :skillObjList="languages" :label="'Languages:'"/>
+          <SkillGallery :skillObjList="cloudServices" :label="'Cloud Services:'"/>
+          <SkillGallery :skillObjList="frameworks" :label="'Frameworks:'"/>
+          <SkillGallery :skillObjList="databases" :label="'Databases:'"/>
+          <SkillGallery :skillObjList="operatingSystems" :label="'Operating Systems:'"/>
+        </div>
+        <div v-else>
+          <WorkExperience/>
+        </div>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
-import SkillGallery from '@/components/skills/SkillGallery.vue'
-import LabelSwitch from '@/components/skills/LabelSwitch.vue'
+import SkillGallery from '@/components/experience/SkillGallery.vue'
+import LabelSwitch from '@/components/experience/LabelSwitch.vue'
+import TabSlider from '@/components/experience/TabSlider.vue'
+import WorkExperience from '@/components/experience/WorkExperience.vue'
 
 export default {
   components: {
+    WorkExperience,
+    TabSlider,
     SkillGallery,
     LabelSwitch
   },
@@ -22,7 +36,8 @@ export default {
   data: () => ({
     show: false,
     seen: false,
-    displayLabels: false,
+    tabIndex: 0,
+
     operatingSystems: [
         { src: require('@/assets/experience/operating_systems/mac_logo.png'), name: 'MacOS', show: false },
         { src: require('@/assets/experience/operating_systems/windows_logo.png'), name: 'Windows', show: false },
@@ -71,6 +86,10 @@ export default {
   }),
 
   methods: {
+    tabSwitch(value) {
+      this.tabIndex = value
+    },
+
     toggleLabels(showAll) {
       console.log(showAll)
       let skillsList = [
