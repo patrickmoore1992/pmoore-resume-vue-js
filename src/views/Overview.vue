@@ -44,33 +44,19 @@
         </v-col>
       </v-row>
 
-      <!-- TODO: v-for -->
-      <v-row dense>
-        <v-col align="center" justify="center">
-          <transition name="fade">
-            <v-btn v-if="seen" plain large href="https://twitter.com/mcpattigans"><b>Tweets</b>
-              <v-img width="45px" height="45px" src="@/assets/twitter_logo.png"/>
-            </v-btn>
-          </transition>
-          <transition name="fade">
-            <v-btn v-if="seen" plain large href="https://github.com/patrickmoore1992"><b>Code</b>
-              <v-img width="45px" height="45px" src="@/assets/github_logo.png"/>
-            </v-btn>
-          </transition>
-          <transition name="fade">
-            <v-btn v-if="seen" plain large href="https://www.linkedin.com/in/patrick-moore-4748824b/"><b>LinkedIn</b>
-              <v-img width="45px" height="45px" src="@/assets/linkedin_logo.png"/>
-            </v-btn>
-          </transition>
-        </v-col>
-      </v-row>
+      <OverviewFooter/>
   </v-container>
 </template>
 
 <script>
+import OverviewFooter from '@/components/OverviewFooter.vue'
 
 export default {
-  name: 'overview',  
+  name: 'overview',
+
+  components: {
+    OverviewFooter
+  },
   
   data: () => ({
     seen: false,

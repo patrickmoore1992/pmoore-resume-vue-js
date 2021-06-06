@@ -1,14 +1,23 @@
 <template>
   <v-navigation-drawer 
-    dark color="#0e0e14"
+    expand-on-hover
+    permanent
+    dark 
+    color="#0e0e14"
     style="opacity: .9"
     app 
     clipped 
     v-bind="$attrs" 
-    class="py-2"
-  >
-
-    <v-list dense nav class="py-0">
+    class="py-2">
+    <v-list 
+      dense 
+      nav 
+      class="py-0">
+      <v-list-item >
+        <v-list-item-avatar>
+          <v-img src="@/assets/patrick_avatar.png"></v-img>
+        </v-list-item-avatar>
+      </v-list-item>
       
       <!-- TODO: put into a list and iterate -->
       <v-list-item :to="'/overview'">

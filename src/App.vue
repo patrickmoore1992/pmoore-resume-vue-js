@@ -1,12 +1,12 @@
 <template>
   <v-app style="background-color: #fafafa">
-    <v-app-bar style="opacity: .9; color: #0e0e14" app clipped-left dark color="#0e0e14">
+    <!-- <v-app-bar style="opacity: .9; color: #0e0e14" app clipped-left dark color="#0e0e14">
       <v-app-bar-nav-icon @click="isNavDrawerOpen = !isNavDrawerOpen"/>
-      <!-- <span 
+      <span 
         style="font-family: 'Lobster', cursive; color: white">
           "If wishes were fishes we'd all cast nets"
-      </span> -->
-    </v-app-bar>
+      </span>
+    </v-app-bar> -->
     <NavDrawer v-model="isNavDrawerOpen"/>
     <v-content>
       <v-container fluid>
