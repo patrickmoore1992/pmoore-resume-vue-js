@@ -14,9 +14,12 @@
       nav 
       class="py-0">
       <v-list-item >
-        <v-list-item-avatar>
+        <v-list-item-avatar size="35">
           <v-img src="@/assets/patrick_avatar.png"></v-img>
         </v-list-item-avatar>
+        <v-list-item-content>
+          <b>Patrick T. Moore</b>
+        </v-list-item-content>
       </v-list-item>
       
       <!-- TODO: put into a list and iterate -->
