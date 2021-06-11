@@ -6,7 +6,7 @@
         <div v-if="tabIndex === 0">
           <LabelSwitch @toggled="toggleLabels"/>
           <SkillGallery :skillObjList="languages" :label="'Languages:'"/>
-          <SkillGallery :skillObjList="cloudServices" :label="'Cloud Services:'"/>
+          <SkillGallery :skillObjList="cloudServices" :label="'Cloud Services & Technologies:'"/>
           <SkillGallery :skillObjList="frameworks" :label="'Frameworks:'"/>
           <SkillGallery :skillObjList="databases" :label="'Databases:'"/>
           <SkillGallery :skillObjList="operatingSystems" :label="'Operating Systems:'"/>
