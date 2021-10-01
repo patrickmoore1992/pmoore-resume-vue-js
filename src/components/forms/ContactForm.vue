@@ -92,9 +92,9 @@ export default {
   },
 
   methods: {
-     validate () {
-        this.$refs.form.validate()
-      },
+    validate () {
+      this.$refs.form.validate()
+     },
       submit () {
         alert('Submitting form.')
       }

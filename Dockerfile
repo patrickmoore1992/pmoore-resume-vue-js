@@ -1,4 +1,7 @@
 # build stage
+ARG VAR1
+ARG VAR2
+
 FROM node:14.17.0-alpine as build-stage
 WORKDIR /app
 COPY package*.json ./
