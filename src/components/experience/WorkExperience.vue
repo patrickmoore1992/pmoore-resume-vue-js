@@ -58,7 +58,7 @@ export default ({
       {
         dateRange: 'OCTOBER 2013 - MAY 2014', 
         title: 'DATA QUALITY & ANALYSIS INTERN', 
-        company: 'FIRST ORION', 
+        company: 'PRIVACYSTARD', 
         descriptions: [
           'Created stored procedures in MS SQL Server that help automate data auditing operations. Developed several desktop applications in java to help automate menial tasks, saving time that could be spent more productively.',
         ] 
@@ -74,7 +74,7 @@ export default ({
       {
         dateRange: 'JUNE 2011 - OCTOBER 2013', 
         title: 'TEAM TRAINER', 
-        company: 'FIRST ORION', 
+        company: 'TARGET CORPORATION', 
         descriptions: [
           'In charge of training new crew members of policies/procedures and compiling a report for HR to review their performance. In that time period I was employee of the month eight times in a twoyear period.',
         ] 

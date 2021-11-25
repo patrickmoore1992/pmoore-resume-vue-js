@@ -13,7 +13,7 @@
       <v-row >
         <v-col align="center" justify="center" width='50' sm>
           <transition name="fade">
-            <h1 v-if="seen" style="font-family: Roboto"><strong>Patrick Moore</strong></h1>
+            <h1 v-if="seen" style="font-family: Roboto"><strong>Patrick T. Moore</strong></h1>
           </transition>
         </v-col>
       </v-row>
@@ -38,7 +38,7 @@
             <span 
               v-if="seen" 
               style="font-family: Roboto; color: grey">
-                Former business major turned data engineer with a focus in operations and scalable web tool development.
+                Former business major turned data engineer with a focus in operations and scalable web application development.
             </span>
           </transition>
         </v-col>
