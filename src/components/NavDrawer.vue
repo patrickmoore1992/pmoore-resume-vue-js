@@ -50,30 +50,12 @@
         </v-list-item-content>
       </v-list-item>
 
-      <v-list-item :to="'/site-info'">
+      <v-list-item :to="'/siteinfo'">
         <v-list-item-icon>
           <v-icon>mdi-head-question-outline</v-icon>
         </v-list-item-icon>
         <v-list-item-content>
           <v-list-item-title>How was this site built?</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-list-item :to="'/showcase'">
-        <v-list-item-icon>
-          <v-icon>mdi-flask</v-icon>
-        </v-list-item-icon>
-        <v-list-item-content>
-          <v-list-item-title>Web Tool Showcase</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-list-item :to="'/contact'">
-        <v-list-item-icon>
-          <v-icon>mdi-card-account-mail-outline</v-icon>
-        </v-list-item-icon>
-        <v-list-item-content>
-          <v-list-item-title>Contact</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 

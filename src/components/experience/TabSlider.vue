@@ -32,8 +32,8 @@ export default ({
     tab: null,
     seen: false,
     tabs: [
-      {title: 'Skills'},
-      {title: 'Work Experience'}
+      { title: 'Skills' },
+      { title: 'Work Experience' }
     ],
   }),
 

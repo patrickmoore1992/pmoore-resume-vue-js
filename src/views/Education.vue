@@ -88,7 +88,6 @@
     </v-row>
 
     <!-- STUDENT ORGANIZATIONS -->
-    <!-- TODO: Clean this shit up. -->
     <v-row>
       <v-col align="center" justify="center">
         <transition name="fade">

@@ -9,7 +9,6 @@
           </transition>
         </v-col>
       </v-row>
-
       <v-row >
         <v-col align="center" justify="center" width='50' sm>
           <transition name="fade">
@@ -17,7 +16,6 @@
           </transition>
         </v-col>
       </v-row>
-
       <v-row>
         <v-col align="center" justify="center" width='50' sm>
           <transition name="fade">
@@ -31,7 +29,6 @@
           </transition>
         </v-col>
       </v-row>
-
       <v-row>
         <v-col align="center" justify="center" width='50' sm>
           <transition name="fade">
@@ -43,7 +40,6 @@
           </transition>
         </v-col>
       </v-row>
-
       <OverviewFooter/>
   </v-container>
 </template>

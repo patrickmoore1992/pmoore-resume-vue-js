@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import overview from '@/views/Overview.vue'
 import education from '@/views/Education.vue'
 import experience from '@/views/Experience.vue'
-import contact from '@/views/Contact.vue'
+import siteinfo from '@/views/SiteInfo.vue'
 
 Vue.use(VueRouter)
 
@@ -12,7 +12,7 @@ const routes = [
   { path: '/overview', name: 'overview', component: overview },
   { path: '/experience', name: 'experience', component: experience },
   { path: '/education', name: 'education', component: education },
-  { path: '/contact', name: 'contact', component: contact },
+  { path: '/siteinfo', name: 'siteinfo', component: siteinfo },
 ]
 
 const router = new VueRouter({
