@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app style="background-color: #fafafa">
+    <NavDrawer v-model="isNavDrawerOpen"/>
+    <v-content>
+      <v-container fluid>
+        <router-view/>
+      </v-container>
+    </v-content>
+    <v-footer fixed app padless dark>
+      <v-spacer/>
+      <span>Patrick Thomas Moore, Est. July 3rd, 1992</span>&nbsp;
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavDrawer from './components/NavDrawer';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
-</script>
+    NavDrawer,
+  },
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  data: () => ({
+    isNavDrawerOpen: true
+  }),
+};
+</script>
+<style scoped>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 </style>
