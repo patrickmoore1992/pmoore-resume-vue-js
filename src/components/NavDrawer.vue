@@ -1,6 +1,5 @@
 <template>
   <v-navigation-drawer 
-    expand-on-hover
     permanent
     dark 
     color="#0e0e14"

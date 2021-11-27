@@ -54,7 +54,7 @@
       <v-col align="center" justify="center">
         <transition name="fade">
           <!-- Turn into a component. -->
-          <v-simple-table dense v-if="seen">
+          <v-simple-table dense v-if="seen" height="300px">
             <template v-slot:default>
               <thead>
                 <tr>

@@ -58,7 +58,7 @@ export default ({
       {
         dateRange: 'OCTOBER 2013 - MAY 2014', 
         title: 'DATA QUALITY & ANALYSIS INTERN', 
-        company: 'PRIVACYSTARD', 
+        company: 'PRIVACYSTAR', 
         descriptions: [
           'Created stored procedures in MS SQL Server that help automate data auditing operations. Developed several desktop applications in java to help automate menial tasks, saving time that could be spent more productively.',
         ] 

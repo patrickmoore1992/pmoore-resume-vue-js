@@ -10,10 +10,9 @@ COPY . .
 RUN npm run build
 
 # production stage
-FROM nginx:1.a13.12-alpine as production-stage
+FROM nginx:1.21.4-alpine as production-stage
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 RUN mkdir /etc/letsencrypt
-
 # TODO: fix the lets_encrypt to do this for you??
 COPY fullchain.pem /etc/letsencrypt
 COPY privkey.pem /etc/letsencrypt

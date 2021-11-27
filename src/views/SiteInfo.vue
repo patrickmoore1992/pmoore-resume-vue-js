@@ -5,13 +5,10 @@
       <v-col>
         <transition name="fade">
           <div v-if="seen">
-            <span>
-              <b>AWS High-Level Architecture</b>
-            </span>
             <v-img
               src="@/assets/resume-site-architecture.png"
-              max-height="500"
-              max-width="500">
+              max-height="1000"
+              max-width="1000">
             </v-img>
           </div>
         </transition>
