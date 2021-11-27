@@ -42,11 +42,13 @@
       </v-row>
       <v-row>
         <v-col align="center" justify="center" width='50' sm>
-          <span
-            v-if="seen"
-            style="font-family: Roboto; color: grey"
-            >pmoore2014@gmail.com
-          </span>
+          <transition name="fade">
+            <span
+              v-if="seen"
+              style="font-family: Roboto; color: grey"
+              >pmoore2014@gmail.com
+            </span>
+          </transition>
         </v-col>
       </v-row>
       <OverviewFooter/>
