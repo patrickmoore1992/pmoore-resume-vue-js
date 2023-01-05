@@ -23,7 +23,7 @@
               v-if="seen" 
               style="font-family: Roboto; color: grey">
               <strong>
-                Full-stack software engineer looking for exciting and challenging opportunities.
+                Experienced data engineer looking for exciting and challenging opportunities.
               </strong>
             </span>
           </transition>
@@ -35,7 +35,7 @@
             <span 
               v-if="seen" 
               style="font-family: Roboto; color: grey">
-                Former business major turned data engineer with a focus in operations and scalable web application development.
+                Data nerd with a passion for building elegant and efficient data pipelines.
             </span>
           </transition>
         </v-col>

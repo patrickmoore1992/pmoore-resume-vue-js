@@ -28,13 +28,26 @@ export default ({
     seen: false,
     jobs: [
       {
-        dateRange: 'FEBRUARY 2020 - PRESENT', 
-        title: 'DATA OPERATIONS & INTERNAL TOOLS TEAM LEAD', 
+        dateRange: 'DECEMBER 2021 - PRESENT', 
+        title: 'ASSOCIATE DIRECTOR, SOFTWARE ENGINEERING', 
         company: 'FIRST ORION', 
         descriptions: [
-          'Manage a team of software engineers with a focus in DevOps & Internal Tools/Services for our Data Engineering/Science teams. Assigning tasks and ensuring team members understanding of requirements, proposed designs and priorities.',
-          'Lead the design/architecture of implementing CI/CD for each of the cloud-based projects that our team works with.',
-          'Troubleshoot issues from across all facets of our team’s infrastructure, as well as design ways to help improve the monitoring, job health, and metrics that we gather.'
+          'Direct an organization containing two software engineering teams that oversee the engineering work relating to internal tools & data operations. Assisting the team leads with providing mentorship, coaching, and career growth opportunities for all team members.',
+          'Architected First Orion’s ‘Shared Data Lake’, using Databricks Unity Catalog for centralized data governance & Terraform templates for streamlining new workspace deployments across the company.',
+          'Architected First Orion’s ‘Shared Data Lake’, using Databricks Unity Catalog for centralized data governance & Terraform templates for streamlining new workspace deployments across the company.',
+          'Assisted in the documentation of many core applications owned by our engineering organization.',
+          'Responsible for recruitment for the team, determining technical acumen and pay level for prospective new hires.'
+        ] 
+      },
+      {
+        dateRange: 'FEBRUARY 2020 - DECEMBER 2021', 
+        title: 'DATA ENGINEER, TEAM LEADER', 
+        company: 'FIRST ORION', 
+        descriptions: [
+          'Led a software engineering team on the various domains we owned, primarily relating to internal tooling. Ensured that deliverables were being met on time and that everybody on my team had the appropriate resources they needed to complete their work.',
+          'Developed a process using Scala & Apache Spark deployed in Databricks that ingests 60,000 CSV files daily from a client’s SFTP server and published them for consumption by our data science team’s scoring models.',
+          '	Streamlined the deployment process for our spark clusters by creating reusable Terraform modules for Databricks jobs & altering our core data engineering framework to allow for managing config files in source control by utilizing KMS encryption, cutting deployment time by 70%.',
+          'Identified opportunities for cost saving in our Databricks & AWS accounts that resulted in a $30k monthly drop in the data team’s monthly infrastructure expenses.'
         ] 
       },
       {
@@ -42,30 +55,32 @@ export default ({
         title: 'DATA ENGINEER', 
         company: 'FIRST ORION', 
         descriptions: [
-          'Was the sole developer for a suite of processes written in Scala using the Apache Spark framework and deployed in both EMR & Databricks. This involves tuning these flows to run efficiently on the minimum amount of hardware needed to get the job done.',
-          'Managed various web applications built in VueJS & Django, as well as their corresponding backend components. This includes APIs (Scala/Vert.x), Databases (Redshift, MySQL), and Apache Spark Flows. All of which are hosted through AWS.',
+          'Coded a series of data pipelines using Scala & Spark for our client-facing reporting warehouse, which read data periodically from Kinesis streams and performed ETL on the raw data before writing to Amazon Redshift.',
+          'Developed stored procedures for our Amazon Redshift clusters that handled syncing large historical datasets to ‘current’ tables, and archiving table data to S3 to reduce costs associated with storage on the cluster.',
+          'Created a suite of Rest API endpoints in Scala using the Vert.X framework that helped expose our backend application data in a secure manner, so that it could be sold to customers.'
         ] 
       },
       {
         dateRange: 'MAY 2014 - JANUARY 2017', 
-        title: 'BUSINESS PROGRAMMER ANALYST', 
+        title: 'PROGRAMMER ANALYST', 
         company: 'FIRST ORION', 
         descriptions: [
-          'Updated, maintained, and created reporting processes to fulfill the needs of our sales team, and developed formatted reports in SQL Server Reporting Services (SSRS).',
-          'Maintained an elaborate transaction processing system in MS SQL Server that at its height produced $60k of revue per month for the company.'
+          'Maintained a transaction processing system in MS-SQL Server that identified leads based off application data and distributed them to our partner’s various CRM systems.',
+          'Created automated data auditing jobs that ran on our primary production SQL Server database.'
         ] 
       },
       {
         dateRange: 'OCTOBER 2013 - MAY 2014', 
         title: 'DATA QUALITY & ANALYSIS INTERN', 
-        company: 'PRIVACYSTAR', 
+        company: 'FIRST ORION', 
         descriptions: [
-          'Created stored procedures in MS SQL Server that help automate data auditing operations. Developed several desktop applications in java to help automate menial tasks, saving time that could be spent more productively.',
+          'Automated the auditing of various tables in our MS-SQL database using scheduled stored procedures.',
+          'Assisted in the design of complex data processing jobs that cleaned and formatted data from our various mobile applications for reporting purposes.'
         ] 
       },
       {
-        dateRange: 'JUNE 2013 - AUGUST 2013', 
-        title: 'QA INTERN', 
+        dateRange: 'SUMMER 2013', 
+        title: 'QUALITY ASSURANCE INTERN', 
         company: 'FIDELITY NATIONAL INFORMATION SERVICES (FIS)', 
         descriptions: [
           'Created/Updated manual test condition scripts for several core projects owned by our team. I also documented changes in client customized code versus the generic core code, as well as, assisted business leaders on the team with creating excel macros using VBA.',
@@ -76,6 +91,7 @@ export default ({
         title: 'TEAM TRAINER', 
         company: 'TARGET CORPORATION', 
         descriptions: [
+          'Documented changes in client customized code versus the generic core code, as well as assisted business leaders on the team with creating excel macros using VBA.',
           'In charge of training new crew members of policies/procedures and compiling a report for HR to review their performance. In that time period I was employee of the month eight times in a twoyear period.',
         ] 
       },
